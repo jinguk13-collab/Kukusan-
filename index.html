@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Waras Kukusan - Business Plan</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100%;
+      overflow-x: hidden;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .header {
+      background: white;
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .business-name {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #2d3748;
+      margin: 0 0 1rem 0;
+      line-height: 1.2;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      color: #4a5568;
+      margin: 0 0 2rem 0;
+      font-style: italic;
+    }
+
+    .meta-info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      font-size: 1rem;
+      color: #718096;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #667eea;
+      margin: 0 0 1.5rem 0;
+      padding-bottom: 0.75rem;
+      border-bottom: 3px solid #667eea;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    tr:hover {
+      background: #f7fafc;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border-left: 4px solid #f59e0b;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    .highlight-title {
+      font-weight: 700;
+      color: #92400e;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .highlight-content {
+      color: #78350f;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .strategy-card {
+      background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 2px solid #818cf8;
+    }
+
+    .strategy-card h3 {
+      color: #3730a3;
+      margin: 0 0 0.75rem 0;
+      font-size: 1.2rem;
+    }
+
+    .strategy-card p {
+      color: #4338ca;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .price-tag {
+      display: inline-block;
+      background: #10b981;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .bullet-list li {
+      padding: 0.75rem 0 0.75rem 2rem;
+      position: relative;
+      line-height: 1.6;
+      color: #2d3748;
+    }
+
+    .bullet-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .business-name {
+        font-size: 2rem;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+      }
+
+      .section {
+        padding: 1.5rem;
+      }
+
+      .strategy-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="container">
+   <header class="header">
+    <h1 class="business-name" id="businessName">THE WARAS KUKUSAN</h1>
+    <p class="tagline" id="tagline">Sehat Tanpa Minyak, Kenyang Tanpa Khawatir</p>
+    <div class="meta-info">
+     <div class="meta-item"><span>📅</span> <span id="date">12 November 2025</span>
+     </div>
+     <div class="meta-item"><span>✍️</span> <span id="author">[Nama Anda]</span>
+     </div>
+    </div>
+   </header>
+   <section class="section">
+    <h2 class="section-title">1. KONSEP DASAR &amp; DIFERENSIASI</h2>
+    <div class="table-container">
+     <table>
+      <thead>
+       <tr>
+        <th>Elemen</th>
+        <th>Rencana Awal</th>
+        <th>Penyempurnaan &amp; Detail</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td><strong>Jenis</strong></td>
+        <td>Kukusan Sehat</td>
+        <td>Fokus pada Karbohidrat Lokal Sehat: Singkong, Ubi, Pisang, Jagung, Kacang. Minimal 3 jenis tersedia setiap sesi.</td>
+       </tr>
+       <tr>
+        <td><strong>Ciri Khas</strong></td>
+        <td>Tanpa minyak, dibungkus daun pisang, ada garpu kecil</td>
+        <td>• Daun pisang = bungkus sekaligus piring (zero waste + aroma otentik)<br>
+         • Garpu kecil = kesan premium &amp; higienis<br>
+         • Tambah 2–3 Varian Saus Sehat: taburan kelapa parut, cocolan gula merah cair, sedikit keju/mayo (opsional)</td>
+       </tr>
+       <tr>
+        <td><strong>Tagline</strong></td>
+        <td>"Makan Sehat, Badan Waras"</td>
+        <td>"The Waras Kukusan: Sehat Tanpa Minyak, Kenyang Tanpa Khawatir"</td>
+       </tr>
+       <tr>
+        <td><strong>Harga</strong></td>
+        <td>Rp5.000 / isi 3 potong</td>
+        <td>Paket Variasi:<br>
+         • Basic: Rp5.000 (3 potong)<br>
+         • Paket Waras: Rp10.000 (5 potong mix + Teh Waras)</td>
+       </tr>
+       <tr>
+        <td><strong>Lokasi Target</strong></td>
+        <td>Tempat ramai sore–malam</td>
+        <td>Spesifik: Titik kumpul komunitas/olahraga (setelah CFD, dekat gym, jalur pesepeda, lampu merah arus balik)</td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title">2. JAM OPERASIONAL &amp; MANAJEMEN STOK</h2>
+    <div class="table-container">
+     <table>
+      <thead>
+       <tr>
+        <th>Sesi</th>
+        <th>Jam Operasional</th>
+        <th>Target &amp; Fokus Menu</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td><strong>Pagi</strong></td>
+        <td>06.00 – 10.00</td>
+        <td>Pekerja kantoran, pelajar, olahraga pagi → Pisang, Jagung, Kacang (cepat matang)</td>
+       </tr>
+       <tr>
+        <td><strong>Malam</strong></td>
+        <td>17.00 – 22.00</td>
+        <td>Nongkrong malam, dinner ringan → Singkong, Ubi</td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="highlight-box">
+     <h3 class="highlight-title">Manajemen Stok (Wajib)</h3>
+     <ul class="bullet-list">
+      <li>Pengiriman bahan: 3x seminggu (Senin, Rabu, Jumat) → kesegaran terjamin</li>
+      <li>Bahan sisa pagi: dikukus ulang cepat (simpan tertutup &amp; bersih)</li>
+      <li>Bahan &gt;2 hari → buang / jadi sample gratis (tidak dijual)</li>
+     </ul>
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title">3. PERALATAN UTAMA &amp; INVESTASI AWAL</h2>
+    <div class="table-container">
+     <table>
+      <thead>
+       <tr>
+        <th>Alat</th>
+        <th>Kebutuhan</th>
+        <th>Harga (Rp)</th>
+        <th>Fungsi Tambahan</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>Kukusan Besar (2 tingkat)</td>
+        <td>2 unit</td>
+        <td>300.000</td>
+        <td>1 untuk mengukus, 1 untuk display &amp; menghangatkan (uap selalu terlihat)</td>
+       </tr>
+       <tr>
+        <td>Kompor Gas + Tabung</td>
+        <td>1 set</td>
+        <td>400.000</td>
+        <td>SNI, selang &amp; regulator</td>
+       </tr>
+       <tr>
+        <td>Meja Stainless</td>
+        <td>1</td>
+        <td>800.000</td>
+        <td>Higienis &amp; mudah dibersihkan</td>
+       </tr>
+       <tr>
+        <td>Tenda 2x2 m</td>
+        <td>1</td>
+        <td>700.000</td>
+        <td>Warna hijau/putih (branding sehat)</td>
+       </tr>
+       <tr>
+        <td>Wadah, Nampan, Penjepit</td>
+        <td>–</td>
+        <td>300.000</td>
+        <td>Wadah tertutup, nampan display, 2 pasang sarung tangan</td>
+       </tr>
+       <tr>
+        <td>Lampu Hias &amp; Banner</td>
+        <td>–</td>
+        <td>400.000</td>
+        <td>Warm white (makanan lebih menggiurkan malam hari)</td>
+       </tr>
+       <tr>
+        <td>Termos Air Panas Besar</td>
+        <td>1</td>
+        <td>150.000</td>
+        <td>Untuk Teh/Lemon Waras</td>
+       </tr>
+       <tr style="background: #f0fdf4; font-weight: 700;">
+        <td colspan="2">TOTAL INVESTASI AWAL</td>
+        <td colspan="2"><span class="price-tag">Rp 3.050.000</span></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title">4. STOK BAHAN HARIAN &amp; ANALISIS KEUNTUNGAN</h2>
+    <div class="highlight-box">
+     <h3 class="highlight-title">Modal Harian</h3>
+     <ul class="bullet-list">
+      <li>Total Modal Harian: <strong>Rp64.000</strong></li>
+      <li>Perkiraan Penjualan: 50 porsi × Rp5.000 = <strong>Rp250.000</strong></li>
+      <li>Laba Kotor: Rp250.000 – Rp64.000 = <strong>Rp186.000/hari</strong></li>
+     </ul>
+    </div>
+    <div class="highlight-box" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left-color: #3b82f6;">
+     <h3 class="highlight-title" style="color: #1e3a8a;">Biaya per Porsi</h3>
+     <ul class="bullet-list">
+      <li>50 porsi ≈ 5 kg bahan → 16 porsi/kg</li>
+      <li>Biaya variabel/porsi (3 potong): Rp64.000 ÷ 50 = <strong>Rp1.280</strong></li>
+      <li>Laba per porsi: Rp5.000 – Rp1.280 = <strong>Rp3.720</strong></li>
+     </ul>
+    </div>
+    <div class="table-container">
+     <table>
+      <thead>
+       <tr>
+        <th>Komponen</th>
+        <th>Biaya Bulanan</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>Sewa lokasi</td>
+        <td>Rp500.000</td>
+       </tr>
+       <tr>
+        <td>Gaji pegawai (1 orang shift malam)</td>
+        <td>Rp1.500.000</td>
+       </tr>
+       <tr style="background: #f0fdf4; font-weight: 700;">
+        <td>Total Biaya Tetap</td>
+        <td>Rp2.000.000</td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="highlight-box" style="background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); border-left-color: #10b981;">
+     <h3 class="highlight-title" style="color: #065f46;">Titik Impas (BEP)</h3>
+     <p class="highlight-content"><strong>Hanya butuh 18 porsi/hari</strong> untuk menutup semua biaya operasional<br>
+       Target 50 porsi/hari → laba bersih signifikan</p>
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title">5. STRATEGI AWAL BIAR CEPAT LAKU</h2>
+    <div class="strategy-grid">
+     <div class="strategy-card">
+      <h3>📍 Lokasi Ramai</h3>
+      <p>Dekat lampu merah / traffic light (orang terpaksa berhenti &amp; melihat)</p>
+     </div>
+     <div class="strategy-card">
+      <h3>🎁 Tester Gratis</h3>
+      <p>Sediakan 1 potong kecil ubi + tulisan: "Coba Gratis Kukusan Waras!"</p>
+     </div>
+     <div class="strategy-card">
+      <h3>🔥 Promo Awal</h3>
+      <p>"Beli Paket Waras Rp10.000 → Gratis Teh Waras Hangat/Dingin"</p>
+     </div>
+     <div class="strategy-card">
+      <h3>🎨 Branding</h3>
+      <p>Warna hijau + cokelat muda (alami/vintage), huruf tebal &amp; terang</p>
+     </div>
+     <div class="strategy-card">
+      <h3>📱 Media Sosial</h3>
+      <p>Soft-launch 1 minggu sebelum buka di IG/TikTok: Video uap mengepul, Testimoni tanpa minyak, gluten-free, lokal</p>
+     </div>
+    </div>
+   </section>
+  </div>
+  <script>
+    const defaultConfig = {
+      business_name: "THE WARAS KUKUSAN",
+      tagline: "Sehat Tanpa Minyak, Kenyang Tanpa Khawatir",
+      date: "12 November 2025",
+      author: "[Nama Anda]",
+      primary_color: "#667eea",
+      secondary_color: "#764ba2",
+      accent_color: "#10b981",
+      text_color: "#2d3748",
+      background_gradient_start: "#667eea",
+      font_family: "Segoe UI",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const businessName = config.business_name || defaultConfig.business_name;
+      const tagline = config.tagline || defaultConfig.tagline;
+      const date = config.date || defaultConfig.date;
+      const author = config.author || defaultConfig.author;
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseSize = config.font_size || defaultConfig.font_size;
+      const baseFontStack = 'Tahoma, Geneva, Verdana, sans-serif';
+
+      document.getElementById('businessName').textContent = businessName;
+      document.getElementById('tagline').textContent = tagline;
+      document.getElementById('date').textContent = date;
+      document.getElementById('author').textContent = author;
+
+      document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.querySelector('.business-name').style.fontSize = `${baseSize * 3}px`;
+      document.querySelector('.tagline').style.fontSize = `${baseSize * 1.5}px`;
+      document.querySelectorAll('.section-title').forEach(el => {
+        el.style.fontSize = `${baseSize * 1.75}px`;
+      });
+      document.querySelectorAll('td, th, p, li').forEach(el => {
+        el.style.fontSize = `${baseSize * 0.95}px`;
+      });
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["business_name", config.business_name || defaultConfig.business_name],
+        ["tagline", config.tagline || defaultConfig.tagline],
+        ["date", config.date || defaultConfig.date],
+        ["author", config.author || defaultConfig.author]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99d5e39ca555fce7',t:'MTc2Mjk0OTAzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
